@@ -17,3 +17,7 @@ sudo docker run --rm -it -v $pwd:/root/env os-buildenv
 ```sh
 make build-x86_64
 ```
+---
+### Dependencies:
+#### Docker:
+>randomdude/gcc-cross-x86_64-elf
