@@ -6,6 +6,8 @@
     
 - [Qemu](https://www.qemu.org/download/)
 
+- [Nasm](https://www.nasm.us/)
+
 ---
 ### Build ISO:
 - Build Docker: 
