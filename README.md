@@ -1,7 +1,7 @@
 # OS-Kernel
 ---
 ### Build ISO:
-- Build: 
+- Build docker: 
 ```sh
 sudo docker build buildenv -t os-buildenv
 ```
