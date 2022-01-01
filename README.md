@@ -1,7 +1,14 @@
 # OS-Kernel
 ---
+### Dependencies:
+- [Docker](https://github.com/docker)
+    - [randomdude/gcc-cross-x86_64-elf](https://hub.docker.com/r/randomdude/gcc-cross-x86_64-elf)
+    
+- [Qemu](https://www.qemu.org/download/)
+
+---
 ### Build ISO:
-- Build docker: 
+- Build Docker: 
 ```sh
 sudo docker build buildenv -t os-buildenv
 ```
@@ -18,6 +25,8 @@ sudo docker run --rm -it -v $pwd:/root/env os-buildenv
 make build-x86_64
 ```
 ---
-### Dependencies:
-#### Docker:
->randomdude/gcc-cross-x86_64-elf
+
+## Test the ISO:
+```sh
+qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso
+```
